@@ -82,7 +82,7 @@ public class FromUser {
 		} 
 		catch (Exception e)
 		{
-			logger.info("Exception :"+e.getMessage());
+			//logger.info("Exception :"+e.getMessage());
         } finally {
             if (pm != null && !pm.isClosed())
                 pm.close();
@@ -146,7 +146,7 @@ public class FromUser {
             , cal.get( Calendar.MONTH )
             , cal.get( Calendar.DATE ), 0, 0, 0 );
         date = cal.getTime();
-		logger.info("date = "+date);
+		//logger.info("date = "+date);
         return date;
     }
 

@@ -5,7 +5,10 @@
     <tr align="center" bgcolor="lightgray">
       <th width="200"> WORD </th>
       <th width="200"> LINK </th>
-      <th width="200"> OAUTH </th>
+      <th width="200"> SINCEID </th>
+      <th width="200"> ACCESSTOKEN </th>
+      <th width="200"> REQUESTTOKEN </th>
+      ##<th width="200"> OAUTH </th>
       <th width="100"> DELETE </th>
     </tr>
   #foreach ($bot in $bots)
@@ -15,8 +18,6 @@
       <td> $bot.getSinceId() </td>
       <td> $bot.hasAccessToken() </td>
       <td> $bot.getRequestToken() </td>
-      <td> $bot.getAccessToken() </td>
-      <td> $bot.getTwitterAccount() </td>
       <td> <a href="/botEditor?botId=$bot.getId()&delete=true"> del </a></td>
     </tr>
   #end

@@ -3,6 +3,6 @@
   <cron>
     <url>/cronTaskHandler</url>
     <description>queue bot tasks</description>
-    <schedule>every 5 minutes</schedule>
+    <schedule>every 2 minutes</schedule>
   </cron>
 </cronentries>

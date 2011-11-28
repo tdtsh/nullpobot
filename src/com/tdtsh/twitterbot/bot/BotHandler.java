@@ -74,7 +74,7 @@ public class BotHandler extends HttpServlet {
 				{
 					if (user.getTweetTime().before(FromUser.makeDateDiff(1, now)))
 					{
-						logger.info("user exists but too new :"+user.getTweetTime());
+						logger.info("user exists but too new :"+tw.getFromUser()+" "+user.getTweetTime());
 						continue;  // 1日1回に制限
 					}
 					else
