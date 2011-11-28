@@ -1,0 +1,22 @@
+<html>
+<body style="padding: 10 100 10 100;">
+  <div>
+  <span style="font-size: 200%"> Edit Bot </span>
+  </div>
+  <form action="/botEditorHandler" method="post"/>
+    <input type="hidden" name="botId" value = "$botId"/>
+    <table border="0">
+    <tr><td align="right">word:</td>
+        <td> <input type="text"  name="word" value="$word"/> </td></tr>
+    <tr><td align="right">tweet0:</td>
+        <td> <input type="text"  name="tweet0" value="$tweet0"/> </td></tr>
+    <tr><td align="right">tweet1:</td>
+        <td> <input type="text"  name="tweet1" value="$tweet1"/> </td></tr>
+    <tr><td align="right">tweet2:</td>
+        <td> <input type="text"  name="tweet2" value="$tweet2"/> </td></tr>
+    <tr><td><input type="submit" value="submit"></td><td/><tr/>  
+    </table>
+  </form>
+</body>
+</html>
+

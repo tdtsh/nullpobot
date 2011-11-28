@@ -1,0 +1,24 @@
+<html>
+<body style="padding: 10 100 10 100;">
+  <span style="font-size: 200%"> Bots for $user </span>
+  <table rules="all" cellpadding="5">
+    <tr align="center" bgcolor="lightgray">
+      <th width="200"> WORD </th>
+      <th width="200"> LINK </th>
+      <th width="200"> OAUTH </th>
+      <th width="100"> DELETE </th>
+    </tr>
+  #foreach ($bot in $bots)
+    <tr align="center">
+      <td> <a href="/botEditor?botId=$bot.getId()"> $bot.getWord() </a></td>
+      <td> <a href="http://twitter.com/$bot.getTwitterAccount()"> $bot.getTwitterAccount() Page</a> </td>
+      <td> $bot.hasAccessToken() </td>
+      <td> <a href="/botEditor?botId=$bot.getId()&delete=true"> del </a></td>
+    </tr>
+  #end
+  </table>
+<hr/>  
+  <a href="/botEditor"> new bots </a>
+</body>
+</html>
+

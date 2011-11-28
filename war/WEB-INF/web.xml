@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>botEditor</servlet-name>
+		<servlet-class>com.tdtsh.twitterbot.bot.BotEditor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>botEditor</servlet-name>
+		<url-pattern>/botEditor</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>botEditorHandler</servlet-name>
+		<servlet-class>com.tdtsh.twitterbot.bot.BotEditorHandler</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>botEditorHandler</servlet-name>
+		<url-pattern>/botEditorHandler</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>authHandler</servlet-name>
+		<servlet-class>com.tdtsh.twitterbot.bot.AuthHandler</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>authHandler</servlet-name>
+		<url-pattern>/authenticated</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>botList</servlet-name>
+		<servlet-class>com.tdtsh.twitterbot.bot.BotList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>botList</servlet-name>
+		<url-pattern>/botList</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>botHandler</servlet-name>
+		<servlet-class>com.tdtsh.twitterbot.bot.BotHandler</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>botHandler</servlet-name>
+		<url-pattern>/botHandler</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>cronTaskHandler</servlet-name>
+		<servlet-class>com.tdtsh.twitterbot.bot.CronTaskHandler</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cronTaskHandler</servlet-name>
+		<url-pattern>/cronTaskHandler</url-pattern>
+	</servlet-mapping>
+
+	<security-constraint>
+		<web-resource-collection>
+			<url-pattern>/botList</url-pattern>
+			<url-pattern>/botEditor</url-pattern>
+			<url-pattern>/botEditorHandler</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>*</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<context-param>
+		<param-name>consumerKey</param-name>
+		<param-value>aL7BQWBWkF21TvvSlMKA4Q</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>consumerSecret</param-name>
+		<param-value>jjVcw8AodNj9QqRfGocg88jfS342raQV2wvfhHRK0U</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>accessToken</param-name>
+		<param-value>422357323-gXrIJVhgrPnGX8BsHmBqQROLPjzlmHhlxz6kI29D</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>accessTokenSecret</param-name>
+		<param-value>l8RaXZ2nxrZb4YrcqGS0RrKtKrFglctA24lRcFzCF0</param-value>
+	</context-param>
+
+</web-app>

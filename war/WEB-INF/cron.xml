@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/cronTaskHandler</url>
+    <description>queue bot tasks</description>
+    <schedule>every 5 minutes</schedule>
+  </cron>
+</cronentries>
