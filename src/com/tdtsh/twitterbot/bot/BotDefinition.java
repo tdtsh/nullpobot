@@ -20,12 +20,22 @@ public class BotDefinition {
     @Persistent private User owner;
     @Persistent private String word;
     @Persistent private List<String> tweets;
+
     @Persistent private long sinceId;
 
+	@Extension(vendorName="datanucleus", key="gae.unindexed", value="true")
     @Persistent private String requestToken;
+
+	@Extension(vendorName="datanucleus", key="gae.unindexed", value="true")
     @Persistent private String requestTokenSecret;
+
+	@Extension(vendorName="datanucleus", key="gae.unindexed", value="true")
     @Persistent private String accessToken;
+
+	@Extension(vendorName="datanucleus", key="gae.unindexed", value="true")
     @Persistent private String accessTokenSecret;
+
+	@Extension(vendorName="datanucleus", key="gae.unindexed", value="true")
     @Persistent private String twitterAccount;
     
     public Long getId() {

@@ -12,7 +12,11 @@
     <tr align="center">
       <td> <a href="/botEditor?botId=$bot.getId()"> $bot.getWord() </a></td>
       <td> <a href="http://twitter.com/$bot.getTwitterAccount()"> $bot.getTwitterAccount() Page</a> </td>
+      <td> $bot.getSinceId() </td>
       <td> $bot.hasAccessToken() </td>
+      <td> $bot.getRequestToken() </td>
+      <td> $bot.getAccessToken() </td>
+      <td> $bot.getTwitterAccount() </td>
       <td> <a href="/botEditor?botId=$bot.getId()&delete=true"> del </a></td>
     </tr>
   #end
@@ -21,4 +25,3 @@
   <a href="/botEditor"> new bots </a>
 </body>
 </html>
-

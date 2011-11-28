@@ -1,2 +1,13 @@
 <queue-entries>
+
+	<queue>
+		<name>default</name>
+		<rate>1/s</rate>
+		<bucket-size>5</bucket-size>
+		<retry-parameters>
+			<task-retry-limit>3</task-retry-limit>
+			<task-age-limit>30m</task-age-limit>
+		</retry-parameters>
+	</queue>
+
 </queue-entries>

@@ -3,8 +3,6 @@ package com.tdtsh.twitterbot.util;
 import java.io.IOException;
 import java.io.Writer;
 import java.text.DateFormat;
-import java.util.Map;
-import java.util.HashMap;
 import java.util.TimeZone;
 import java.util.logging.Logger;
 
