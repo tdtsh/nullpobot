@@ -14,6 +14,7 @@ import org.apache.velocity.context.Context;
 import com.google.appengine.api.users.*;
 import com.tdtsh.twitterbot.util.Renderer;
 
+@SuppressWarnings("serial")
 public class BotList extends HttpServlet {
 
     @Override

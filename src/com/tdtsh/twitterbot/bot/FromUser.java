@@ -4,7 +4,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
-import java.util.logging.Logger;
 
 import javax.jdo.PersistenceManager;
 import javax.jdo.Query;
@@ -18,7 +17,7 @@ import com.tdtsh.twitterbot.util.PMF;
 @PersistenceCapable(identityType = IdentityType.APPLICATION, detachable ="true")
 public class FromUser {
 
-    private static Logger logger = Logger.getLogger(FromUser.class.getName());
+    //private static Logger logger = Logger.getLogger(FromUser.class.getName());
 
     @PrimaryKey
     @Persistent private String userName;
@@ -104,7 +103,8 @@ public class FromUser {
     }
 
     // リストを返却
-    public static List<FromUser> getUsers() { 
+    @SuppressWarnings("unchecked")
+	public static List<FromUser> getUsers() { 
         PersistenceManager pm = null;
         try {
             pm = PMF.get().getPersistenceManager();

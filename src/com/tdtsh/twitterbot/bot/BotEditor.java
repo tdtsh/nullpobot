@@ -9,6 +9,7 @@ import org.apache.velocity.context.Context;
 
 import com.tdtsh.twitterbot.util.*;
 
+@SuppressWarnings("serial")
 public class BotEditor extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse res)

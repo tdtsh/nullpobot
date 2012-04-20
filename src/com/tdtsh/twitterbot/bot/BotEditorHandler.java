@@ -67,6 +67,7 @@ http://twitter4j.org/ja/versions.html#migration21x-22x
 
  */
 
+@SuppressWarnings("serial")
 public class BotEditorHandler extends HttpServlet {
     @Override
     public void init() throws ServletException {

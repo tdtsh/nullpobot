@@ -11,6 +11,7 @@ import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
 import twitter4j.auth.AccessToken;
 
+@SuppressWarnings("serial")
 public class AuthHandler extends HttpServlet {
     @Override
     public void init() throws ServletException {

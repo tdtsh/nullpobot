@@ -2,7 +2,6 @@ package com.tdtsh.twitterbot.bot;
 
 import java.io.IOException;
 import java.util.Date;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -19,6 +18,7 @@ import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
 import twitter4j.conf.ConfigurationBuilder;
 
+@SuppressWarnings("serial")
 public class BotHandler extends HttpServlet {
     private static Logger logger = Logger.getLogger(BotHandler.class.getName());
 

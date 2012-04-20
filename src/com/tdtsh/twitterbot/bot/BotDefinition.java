@@ -112,7 +112,8 @@ public class BotDefinition {
     }
 
     // ユーザ情報からボットの定義を取りだし
-    public static List<BotDefinition> getBotDefinition(User user) {
+    @SuppressWarnings("unchecked")
+	public static List<BotDefinition> getBotDefinition(User user) {
         PersistenceManager pm = null;
         try {
             pm = PMF.get().getPersistenceManager();
@@ -176,7 +177,8 @@ public class BotDefinition {
     }
 
     // ボット定義のリストを返却
-    public static List<BotDefinition> getBots() { 
+    @SuppressWarnings("unchecked")
+	public static List<BotDefinition> getBots() { 
         PersistenceManager pm = null;
         try {
             pm = PMF.get().getPersistenceManager();
